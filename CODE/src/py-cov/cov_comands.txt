@@ -1,0 +1,12 @@
+ pip install pytest-cov
+
+pytest --cov                              # testa cobertura sem parametros
+pytest --cov --cov-report term-missing    # mostra os nós não cobertos
+pytest --cov --cov-report html            # cria um relatório html
+
+
+# com parametros
+
+pytest --cov=nome_do_projeto                                  # testa cobertura
+pytest --cov=nome_do_projeto     --cov-report term-missing    # mostra os nós não cobertos
+pytest --cov=nome_do_projeto     --cov-report html            # cria um relatório html
